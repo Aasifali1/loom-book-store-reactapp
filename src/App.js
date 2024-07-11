@@ -63,7 +63,7 @@ const App = () => {
         return;
       }
   
-      const response = await axios.get(`http://localhost:8086/virtualstore/book?name=${encodeURIComponent(selectedBook)}&model=${selectedType}`);
+      const response = await axios.get(`https://project-loom-book-store-1.onrender.com/virtualstore/book?name=${encodeURIComponent(selectedBook)}&model=${selectedType}`);
   
       // Extract timeStatistics, bestPriceDeal, and allDeals from the response
       const { timeStatistics, bestPriceDeal, allDeals } = response.data;
