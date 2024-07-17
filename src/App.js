@@ -78,7 +78,7 @@ const App = () => {
 
       const bookName = searchInput.split(' by ')[0].trim();
 
-      const response = await axios.get(`http://localhost:8086/bestdeal/book?name=${encodeURIComponent(bookName)}`);
+      const response = await axios.get(`https://loom-book-store-reactapp.onrender.com/bestdeal/book?name=${encodeURIComponent(bookName)}`);
 
       const { timeStatistics, bestPriceDeal, allDeals } = response.data;
 
